@@ -1,0 +1,155 @@
+/* ===========================
+   Theme Variables (Light Mode)
+   =========================== */
+:root {
+  color-scheme: light;
+  --primary: 8 145 178;
+  --outline-variant: 190 204 211;
+  --surface-container-low: 248 251 253;
+  --on-tertiary-container: 0 89 80;
+  --secondary-fixed: 246 217 255;
+  --inverse-primary: 164 230 255;
+  --primary-container: 37 99 235;
+  --on-surface: 20 32 38;
+  --surface-container-highest: 224 232 236;
+  --on-secondary-fixed-variant: 114 0 163;
+  --surface: 255 255 255;
+  --outline: 96 113 121;
+  --surface-variant: 234 241 245;
+  --surface-tint: 8 145 178;
+  --surface-container-high: 236 244 248;
+  --surface-bright: 255 255 255;
+  --on-primary: 255 255 255;
+  --secondary-container: 239 211 255;
+  --on-tertiary: 255 255 255;
+  --on-surface-variant: 68 83 91;
+  --on-error-container: 65 0 2;
+  --tertiary-fixed-dim: 50 221 202;
+  --secondary-fixed-dim: 233 179 255;
+  --on-background: 20 32 38;
+  --on-tertiary-fixed: 0 32 28;
+  --on-primary-fixed-variant: 0 78 96;
+  --on-primary-fixed: 0 31 40;
+  --error-container: 255 218 214;
+  --on-secondary: 255 255 255;
+  --inverse-on-surface: 238 241 243;
+  --background: 240 247 252;
+  --on-primary-container: 255 255 255;
+  --surface-container: 242 247 250;
+  --primary-fixed: 183 234 255;
+  --surface-dim: 226 234 238;
+  --primary-fixed-dim: 76 214 255;
+  --tertiary-container: 178 244 235;
+  --surface-container-lowest: 255 255 255;
+  --on-secondary-container: 80 0 116;
+  --inverse-surface: 46 49 52;
+  --tertiary-fixed: 91 250 230;
+  --on-error: 255 255 255;
+  --on-secondary-fixed: 49 0 72;
+  --tertiary: 13 148 136;
+  --error: 186 26 26;
+  --secondary: 147 51 234;
+  --on-tertiary-fixed-variant: 0 80 72;
+  --glass-bg: rgb(255 255 255 / 0.75);
+  --glass-border: rgb(var(--primary) / 0.18);
+  --primary-glow: rgb(var(--primary) / 0.18);
+  --secondary-glow: rgb(var(--secondary) / 0.18);
+  --grid-dot: rgb(var(--primary) / 0.1);
+}
+
+/* ===========================
+   Theme Variables (Dark Mode)
+   =========================== */
+.dark {
+  color-scheme: dark;
+  --primary: 164 230 255;
+  --outline-variant: 60 73 78;
+  --surface-container-low: 25 28 31;
+  --on-tertiary-container: 0 89 80;
+  --secondary-fixed: 246 217 255;
+  --inverse-primary: 0 103 127;
+  --primary-container: 0 209 255;
+  --on-surface: 225 226 231;
+  --surface-container-highest: 50 53 57;
+  --on-secondary-fixed-variant: 114 0 163;
+  --surface: 17 20 23;
+  --outline: 133 147 153;
+  --surface-variant: 50 53 57;
+  --surface-tint: 76 214 255;
+  --surface-container-high: 40 42 46;
+  --surface-bright: 55 57 61;
+  --on-primary: 0 53 67;
+  --secondary-container: 125 1 177;
+  --on-tertiary: 0 55 49;
+  --on-surface-variant: 187 201 207;
+  --on-error-container: 255 218 214;
+  --tertiary-fixed-dim: 50 221 202;
+  --secondary-fixed-dim: 233 179 255;
+  --on-background: 225 226 231;
+  --on-tertiary-fixed: 0 32 28;
+  --on-primary-fixed-variant: 0 78 96;
+  --on-primary-fixed: 0 31 40;
+  --error-container: 147 0 10;
+  --on-secondary: 81 0 116;
+  --inverse-on-surface: 46 49 52;
+  --background: 17 20 23;
+  --on-primary-container: 0 86 106;
+  --surface-container: 29 32 35;
+  --primary-fixed: 183 234 255;
+  --surface-dim: 17 20 23;
+  --primary-fixed-dim: 76 214 255;
+  --tertiary-container: 38 215 196;
+  --surface-container-lowest: 12 14 18;
+  --on-secondary-container: 229 169 255;
+  --inverse-surface: 225 226 231;
+  --tertiary-fixed: 91 250 230;
+  --on-error: 105 0 5;
+  --on-secondary-fixed: 49 0 72;
+  --tertiary: 84 244 224;
+  --error: 255 180 171;
+  --secondary: 233 179 255;
+  --on-tertiary-fixed-variant: 0 80 72;
+  --glass-bg: rgb(var(--surface) / 0.58);
+  --glass-border: rgb(255 255 255 / 0.1);
+  --primary-glow: rgb(var(--primary-container) / 0.3);
+  --secondary-glow: rgb(var(--secondary) / 0.3);
+  --grid-dot: rgb(255 255 255 / 0.05);
+}
+
+/* ===========================
+   Base Transitions
+   =========================== */
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* ===========================
+   Theme Toggle Button
+   =========================== */
+.theme-toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid rgb(var(--outline-variant) / 0.75);
+  background: rgb(var(--surface-container-low) / 0.72);
+  color: rgb(var(--on-surface));
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: rgb(var(--primary) / 0.8);
+  color: rgb(var(--primary));
+  transform: translateY(-1px);
+}
+
+.theme-toggle .theme-icon-light,
+.dark .theme-toggle .theme-icon-dark {
+  display: none;
+}
+
+.dark .theme-toggle .theme-icon-light {
+  display: inline-block;
+}

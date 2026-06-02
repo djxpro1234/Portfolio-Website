@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <script src="js/theme-init.js"></script>
+  <title>About | Dhananjay Sode</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/effects.css" />
+</head>
+<body class="bg-background selection:bg-primary/30">
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 px-gutter py-4 flex flex-col sm:flex-row gap-3 justify-between items-center backdrop-blur-xl bg-surface/60 border-b border-white/10">
+    <a href="index.html" class="font-headline-md text-on-surface font-bold tracking-tighter hover:text-primary transition-all duration-300 flex items-center gap-2 group">
+      <span class="w-2 h-2 bg-primary rounded-full group-hover:animate-ping"></span>
+      DHANANJAY.DEV
+    </a>
+    <div class="flex flex-wrap justify-center gap-4 md:gap-8 font-label-mono text-label-mono text-outline text-xs md:text-sm">
+      <a href="index.html" class="hover:text-primary transition-colors duration-200 uppercase tracking-wider">Home</a>
+      <a href="about.html" class="text-primary uppercase tracking-wider">About</a>
+      <a href="projects.html" class="hover:text-primary transition-colors duration-200 uppercase tracking-wider">Projects</a>
+      <a href="contact.html" class="hover:text-primary transition-colors duration-200 uppercase tracking-wider">Contact</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+        <span class="material-symbols-outlined theme-icon-dark" aria-hidden="true">dark_mode</span>
+        <span class="material-symbols-outlined theme-icon-light" aria-hidden="true">light_mode</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="relative z-10 max-w-7xl mx-auto px-gutter pt-40 sm:pt-[140px] pb-section-gap">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+
+      <!-- Left Column: About -->
+      <div class="lg:col-span-5 space-y-12">
+        <section>
+          <!-- Profile -->
+          <div class="flex items-center gap-5 mb-8 fade-in">
+            <div class="w-20 h-20 shrink-0 p-0.5 rounded-full bg-gradient-to-tr from-primary via-secondary to-primary-container">
+              <img alt="Dhananjay Sode" src="assets/me.jpeg" class="w-full h-full rounded-full object-cover object-[center_20%]" />
+            </div>
+            <div>
+              <h2 class="font-headline-md text-xl font-bold text-on-surface">Dhananjay Sode</h2>
+              <p class="font-label-mono text-label-mono text-primary text-sm">BTech Student · Developer</p>
+            </div>
+          </div>
+
+          <h1 class="font-display-lg-mobile lg:font-display-lg text-5xl lg:text-display-lg text-on-surface tracking-tighter leading-tight lg:leading-none mb-8">
+            Building <span class="text-transparent bg-clip-text bg-gradient-to-br from-primary via-primary-container to-secondary">Digital</span> Foundations.
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            I am a first-year BTech student learning by building. I work with HTML, CSS, JavaScript, Python, and C/C++, and I enjoy creating websites, Discord bots, and practical projects that sharpen my problem-solving skills.
+          </p>
+
+          <!-- Social Links -->
+          <div class="flex flex-wrap gap-4 mt-8 fade-in">
+            <a href="https://www.linkedin.com/in/dhananjaysode/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-2.5 rounded-full glass-card font-label-mono text-label-mono text-sm text-on-surface hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-base">person</span> LinkedIn
+            </a>
+            <a href="https://github.com/djxpro1234" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-2.5 rounded-full glass-card font-label-mono text-label-mono text-sm text-on-surface hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-base">code</span> GitHub
+            </a>
+            <a href="mailto:dhananjaysode2511@gmail.com" class="flex items-center gap-2 px-5 py-2.5 rounded-full glass-card font-label-mono text-label-mono text-sm text-on-surface hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-base">mail</span> Email
+            </a>
+          </div>
+        </section>
+
+        <div class="grid grid-cols-1 gap-6">
+          <!-- Philosophy Card -->
+          <div class="glass-card p-8 rounded-lg fade-in">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+                <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">psychology</span>
+              </div>
+              <h3 class="font-headline-md text-body-lg font-bold text-on-surface">Philosophy</h3>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              I believe the best way to learn programming is to build real things. Every project teaches me something new about logic, design, debugging, and how users actually experience software.
+            </p>
+          </div>
+
+          <!-- Education Card -->
+          <div class="glass-card p-8 rounded-lg fade-in">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center border border-secondary/20">
+                <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">school</span>
+              </div>
+              <h3 class="font-headline-md text-body-lg font-bold text-on-surface">Background</h3>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Currently pursuing BTech as a first-year student while building a strong base in web development, programming fundamentals, automation, and creative coding projects.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Skills -->
+      <div class="lg:col-span-7">
+        <div class="mb-12 fade-in">
+          <div class="inline-block px-4 py-1 rounded-full border border-primary/20 bg-primary/5 mb-4">
+            <span class="font-label-mono text-label-mono text-primary">CURRENT_STACK</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-4">Skills &amp; Projects</h2>
+          <p class="font-body-lg text-body-lg text-outline">Technologies I am learning and using to build websites, Discord bots, and programming projects.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <!-- Skill: HTML -->
+          <div class="glass-card p-6 rounded-lg flex flex-col items-center text-center fade-in">
+            <div class="relative w-24 h-24 mb-6">
+              <svg class="w-full h-full transform -rotate-90">
+                <circle class="text-surface-container-highest" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-width="4"></circle>
+                <circle class="text-primary skill-progress" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-dasharray="263.89" stroke-dashoffset="39.58" stroke-width="4"></circle>
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">html</span>
+              </div>
+            </div>
+            <span class="font-label-mono text-label-mono text-primary mb-2">HTML</span>
+            <h4 class="font-body-lg text-body-lg font-bold text-on-surface">Web Structure</h4>
+            <p class="font-body-sm text-body-sm text-outline mt-2">Semantic pages, layouts</p>
+          </div>
+
+          <!-- Skill: CSS -->
+          <div class="glass-card p-6 rounded-lg flex flex-col items-center text-center fade-in">
+            <div class="relative w-24 h-24 mb-6">
+              <svg class="w-full h-full transform -rotate-90">
+                <circle class="text-surface-container-highest" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-width="4"></circle>
+                <circle class="text-tertiary skill-progress" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-dasharray="263.89" stroke-dashoffset="52.78" stroke-width="4"></circle>
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="material-symbols-outlined text-tertiary text-3xl" style="font-variation-settings: 'FILL' 1;">palette</span>
+              </div>
+            </div>
+            <span class="font-label-mono text-label-mono text-tertiary mb-2">CSS</span>
+            <h4 class="font-body-lg text-body-lg font-bold text-on-surface">Styling</h4>
+            <p class="font-body-sm text-body-sm text-outline mt-2">Responsive UI, effects</p>
+          </div>
+
+          <!-- Skill: JavaScript -->
+          <div class="glass-card p-6 rounded-lg flex flex-col items-center text-center fade-in">
+            <div class="relative w-24 h-24 mb-6">
+              <svg class="w-full h-full transform -rotate-90">
+                <circle class="text-surface-container-highest" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-width="4"></circle>
+                <circle class="text-secondary skill-progress" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-dasharray="263.89" stroke-dashoffset="13.19" stroke-width="4"></circle>
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">code_blocks</span>
+              </div>
+            </div>
+            <span class="font-label-mono text-label-mono text-secondary mb-2">JavaScript</span>
+            <h4 class="font-body-lg text-body-lg font-bold text-on-surface">Interactivity</h4>
+            <p class="font-body-sm text-body-sm text-outline mt-2">DOM, logic, browser apps</p>
+          </div>
+
+          <!-- Skill: Python -->
+          <div class="glass-card p-6 rounded-lg flex flex-col items-center text-center fade-in">
+            <div class="relative w-24 h-24 mb-6">
+              <svg class="w-full h-full transform -rotate-90">
+                <circle class="text-surface-container-highest" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-width="4"></circle>
+                <circle class="text-primary-container skill-progress" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-dasharray="263.89" stroke-dashoffset="65.97" stroke-width="4"></circle>
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">terminal</span>
+              </div>
+            </div>
+            <span class="font-label-mono text-label-mono text-primary-container mb-2">Python</span>
+            <h4 class="font-body-lg text-body-lg font-bold text-on-surface">Bots &amp; Scripts</h4>
+            <p class="font-body-sm text-body-sm text-outline mt-2">Discord bots, automation</p>
+          </div>
+
+          <!-- Skill: C/C++ -->
+          <div class="glass-card p-6 rounded-lg flex flex-col items-center text-center fade-in">
+            <div class="relative w-24 h-24 mb-6">
+              <svg class="w-full h-full transform -rotate-90">
+                <circle class="text-surface-container-highest" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-width="4"></circle>
+                <circle class="text-outline skill-progress" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-dasharray="263.89" stroke-dashoffset="31.67" stroke-width="4"></circle>
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="material-symbols-outlined text-outline text-3xl" style="font-variation-settings: 'FILL' 1;">memory</span>
+              </div>
+            </div>
+            <span class="font-label-mono text-label-mono text-outline mb-2">C/C++</span>
+            <h4 class="font-body-lg text-body-lg font-bold text-on-surface">Programming</h4>
+            <p class="font-body-sm text-body-sm text-outline mt-2">Logic, fundamentals</p>
+          </div>
+
+          <!-- Skill: Projects -->
+          <div class="glass-card p-6 rounded-lg flex flex-col items-center text-center fade-in">
+            <div class="relative w-24 h-24 mb-6">
+              <svg class="w-full h-full transform -rotate-90">
+                <circle class="text-surface-container-highest" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-width="4"></circle>
+                <circle class="text-surface-tint skill-progress" cx="48" cy="48" fill="transparent" r="42" stroke="currentColor" stroke-dasharray="263.89" stroke-dashoffset="47.5" stroke-width="4"></circle>
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="material-symbols-outlined text-surface-tint text-3xl" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+              </div>
+            </div>
+            <span class="font-label-mono text-label-mono text-surface-tint mb-2">Projects</span>
+            <h4 class="font-body-lg text-body-lg font-bold text-on-surface">Websites</h4>
+            <p class="font-body-sm text-body-sm text-outline mt-2">Portfolio, bot projects</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/30">
+    <div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-7xl mx-auto gap-base">
+      <div class="font-headline-md text-headline-md text-on-surface font-bold tracking-tighter">
+        DHANANJAY.DEV
+      </div>
+      <div class="font-label-mono text-label-mono text-outline text-center md:text-left opacity-60">
+        © 2024 DHANANJAY. ARCHITECTING THE FUTURE.
+      </div>
+      <div class="flex items-center gap-6">
+        <a class="font-label-mono text-label-mono text-outline hover:text-secondary transition-colors duration-200 uppercase text-xs" href="projects.html">Projects</a>
+        <a class="font-label-mono text-label-mono text-outline hover:text-secondary transition-colors duration-200 uppercase text-xs" href="contact.html">Contact</a>
+        <a class="font-label-mono text-label-mono text-outline hover:text-secondary transition-colors duration-200 uppercase text-xs" href="https://www.linkedin.com/in/dhananjaysode/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="font-label-mono text-label-mono text-outline hover:text-secondary transition-colors duration-200 uppercase text-xs" href="mailto:dhananjaysode2511@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme-toggle.js" defer></script>
+  <script src="js/about.js" defer></script>
+  <script src="js/effects.js" defer></script>
+</body>
+</html>

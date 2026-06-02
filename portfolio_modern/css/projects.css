@@ -1,0 +1,38 @@
+/* ===========================
+   Projects Page - Custom Styles
+   =========================== */
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--on-surface));
+  overflow-x: hidden;
+}
+
+/* Glass card effect */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: rgb(var(--primary));
+  box-shadow: 0 0 30px rgb(var(--primary-container) / 0.15);
+  transform: translateY(-4px);
+}
+
+/* Neon glow for timeline dots */
+.neon-glow {
+  box-shadow: 0 0 15px rgb(var(--primary-container) / 0.5);
+}
+
+/* Timeline vertical line */
+.timeline-line {
+  background: linear-gradient(to bottom, transparent, rgb(var(--outline-variant)) 10%, rgb(var(--outline-variant)) 90%, transparent);
+}
+
+/* Material Symbols defaults */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}

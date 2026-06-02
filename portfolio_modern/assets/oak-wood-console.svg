@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Oak Wood Computers console application preview</title>
+  <desc id="desc">A stylized dark terminal window showing a computer shop management menu.</desc>
+  <rect width="1280" height="720" fill="#111417"/>
+  <rect x="120" y="96" width="1040" height="528" rx="18" fill="#191c1f" stroke="#3c494e" stroke-width="2"/>
+  <rect x="120" y="96" width="1040" height="56" rx="18" fill="#282a2e"/>
+  <circle cx="154" cy="124" r="8" fill="#ffb4ab"/>
+  <circle cx="182" cy="124" r="8" fill="#f6d9ff"/>
+  <circle cx="210" cy="124" r="8" fill="#54f4e0"/>
+  <text x="640" y="132" fill="#bbc9cf" font-family="JetBrains Mono, Consolas, monospace" font-size="18" text-anchor="middle">oak-wood-computers.py</text>
+  <text x="176" y="220" fill="#a4e6ff" font-family="JetBrains Mono, Consolas, monospace" font-size="34" font-weight="700">OAK WOOD COMPUTERS</text>
+  <text x="176" y="278" fill="#e1e2e7" font-family="JetBrains Mono, Consolas, monospace" font-size="24">1. Buy computer components</text>
+  <text x="176" y="324" fill="#e1e2e7" font-family="JetBrains Mono, Consolas, monospace" font-size="24">2. Sell old computer parts</text>
+  <text x="176" y="370" fill="#e1e2e7" font-family="JetBrains Mono, Consolas, monospace" font-size="24">3. Purchase pre-built PCs</text>
+  <text x="176" y="416" fill="#e1e2e7" font-family="JetBrains Mono, Consolas, monospace" font-size="24">4. Build your own custom PC</text>
+  <text x="176" y="462" fill="#e9b3ff" font-family="JetBrains Mono, Consolas, monospace" font-size="24">5. Generate bill and payment flow</text>
+  <text x="176" y="540" fill="#54f4e0" font-family="JetBrains Mono, Consolas, monospace" font-size="24">&gt; Python + MySQL terminal app</text>
+  <path d="M908 246h86v72h-86z" fill="#323539" stroke="#4cd6ff" stroke-width="4"/>
+  <path d="M935 318h32v34h-32zM900 352h102" stroke="#4cd6ff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M830 418h244l-34 84H864z" fill="#282a2e" stroke="#e9b3ff" stroke-width="4"/>
+  <path d="M872 446h144M860 474h168" stroke="#3c494e" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="650" cy="360" r="250" fill="none" stroke="#a4e6ff" stroke-opacity=".16" stroke-width="2"/>
+  <circle cx="650" cy="360" r="310" fill="none" stroke="#e9b3ff" stroke-opacity=".1" stroke-width="2"/>
+</svg>

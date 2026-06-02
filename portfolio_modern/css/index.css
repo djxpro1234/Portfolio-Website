@@ -1,0 +1,50 @@
+/* ===========================
+   Index Page - Animations & Effects
+   =========================== */
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.typing-effect {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  border-right: 2px solid rgb(var(--primary));
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@media (max-width: 640px) {
+  .typing-effect {
+    white-space: normal;
+    animation: blink 0.75s step-end infinite;
+  }
+}
+
+/* Neon text glow */
+.neon-glow {
+  text-shadow: 0 0 10px rgb(var(--primary) / 0.5), 0 0 20px rgb(var(--primary) / 0.3);
+}
+
+/* Orbital rotation */
+.orbit-rotate {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Background grid pattern */
+.bg-grid {
+  background-image: radial-gradient(circle at 2px 2px, var(--grid-dot) 1px, transparent 0);
+  background-size: 40px 40px;
+}

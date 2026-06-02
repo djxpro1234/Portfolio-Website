@@ -1,0 +1,33 @@
+/* ===========================
+   About Page - Custom Styles
+   =========================== */
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--on-surface));
+  overflow-x: hidden;
+}
+
+/* Glass card effect */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid var(--glass-border);
+  border-left: 1px solid rgb(var(--outline-variant) / 0.45);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-top: 1px solid rgb(var(--primary) / 0.4);
+  box-shadow: 0 0 30px rgb(var(--primary-container) / 0.15);
+}
+
+/* Neon text effect */
+.neon-text {
+  text-shadow: 0 0 8px rgb(var(--primary) / 0.5);
+}
+
+/* Skill progress circle animation */
+.skill-progress {
+  transition: stroke-dashoffset 1s ease-out;
+}

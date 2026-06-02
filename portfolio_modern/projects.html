@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <script src="js/theme-init.js"></script>
+  <title>Projects | Dhananjay Sode</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/effects.css" />
+</head>
+<body class="bg-background selection:bg-primary/30">
+<canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 px-gutter py-4 flex flex-col sm:flex-row gap-3 justify-between items-center backdrop-blur-xl bg-surface/60 border-b border-white/10">
+    <a href="index.html" class="font-headline-md text-on-surface font-bold tracking-tighter hover:text-primary transition-all duration-300 flex items-center gap-2 group">
+      <span class="w-2 h-2 bg-primary rounded-full group-hover:animate-ping"></span>
+      DHANANJAY.DEV
+    </a>
+    <div class="flex flex-wrap justify-center gap-4 md:gap-8 font-label-mono text-label-mono text-outline text-xs md:text-sm">
+      <a href="index.html" class="hover:text-primary transition-colors duration-200 uppercase tracking-wider">Home</a>
+      <a href="about.html" class="hover:text-primary transition-colors duration-200 uppercase tracking-wider">About</a>
+      <a href="projects.html" class="hover:text-primary transition-colors duration-200 uppercase tracking-wider">Projects</a>
+      <a href="contact.html" class="hover:text-primary transition-colors duration-200 uppercase tracking-wider">Contact</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+        <span class="material-symbols-outlined theme-icon-dark" aria-hidden="true">dark_mode</span>
+        <span class="material-symbols-outlined theme-icon-light" aria-hidden="true">light_mode</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-40 sm:pt-32 pb-section-gap px-gutter max-w-7xl mx-auto">
+
+    <!-- Featured Projects Section -->
+    <section class="mb-section-gap" id="projects">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+        <div>
+          <span class="font-label-mono text-label-mono text-tertiary uppercase tracking-widest block mb-4">Portfolio</span>
+          <h2 class="font-headline-md text-headline-md text-on-surface">Featured Projects</h2>
+        </div>
+        <div class="h-px bg-outline-variant flex-grow mx-12 hidden md:block opacity-30"></div>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-sm md:text-right">
+          Real projects I have built while learning web development, programming, and automation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Project Card 1: CollegeSujhav -->
+        <div class="glass-card rounded-lg overflow-hidden group fade-in" data-tilt>
+          <div class="aspect-video relative overflow-hidden">
+            <img alt="CollegeSujhav education guidance website hero screen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/college-sujhav-header.jpg" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+          </div>
+          <div class="p-8">
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="font-label-mono text-label-mono px-3 py-1 rounded-full bg-tertiary/10 border border-tertiary/30 text-tertiary">HTML</span>
+              <span class="font-label-mono text-label-mono px-3 py-1 rounded-full bg-tertiary/10 border border-tertiary/30 text-tertiary">CSS</span>
+              <span class="font-label-mono text-label-mono px-3 py-1 rounded-full bg-tertiary/10 border border-tertiary/30 text-tertiary">JavaScript</span>
+              <span class="font-label-mono text-label-mono px-3 py-1 rounded-full bg-tertiary/10 border border-tertiary/30 text-tertiary">Vercel</span>
+            </div>
+            <h3 class="font-headline-md text-2xl text-on-surface mb-4">CollegeSujhav</h3>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 line-clamp-3">
+              A student-focused college guidance website for exploring courses, colleges, and admission options in India. It includes dedicated pages for B.Tech, MBA, MBBS, BDS, BAMS, BHMS, college listings, and counseling forms.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://github.com/djxpro1234/collegesujhav" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-3 rounded-full font-bold hover:shadow-[0_0_20px_rgba(0,209,255,0.4)] transition-all">
+                <span>View GitHub</span>
+                <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+              </a>
+              <a href="contact.html" class="flex items-center gap-2 border border-white/20 px-6 py-3 rounded-full font-bold hover:border-primary transition-all">
+                <span class="material-symbols-outlined text-sm" data-icon="school">school</span>
+                <span>Project Details</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2: Oak Wood Computers -->
+        <div class="glass-card rounded-lg overflow-hidden group fade-in" data-tilt>
+          <div class="aspect-video relative overflow-hidden">
+            <img alt="Oak Wood Computers console application preview" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/oak-wood-console.svg" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+          </div>
+          <div class="p-8">
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="font-label-mono text-label-mono px-3 py-1 rounded-full bg-tertiary/10 border border-tertiary/30 text-tertiary">Python</span>
+              <span class="font-label-mono text-label-mono px-3 py-1 rounded-full bg-tertiary/10 border border-tertiary/30 text-tertiary">MySQL</span>
+              <span class="font-label-mono text-label-mono px-3 py-1 rounded-full bg-tertiary/10 border border-tertiary/30 text-tertiary">Console App</span>
+            </div>
+            <h3 class="font-headline-md text-2xl text-on-surface mb-4">Oak Wood Computers</h3>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 line-clamp-3">
+              A Python and MySQL based computer shop management system with login/signup, buying components, selling old parts, pre-built PC purchase, custom PC building, bill generation, and payment method flow.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://github.com/djxpro1234/Console-based-application-oak-wood" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-3 rounded-full font-bold hover:shadow-[0_0_20px_rgba(0,209,255,0.4)] transition-all">
+                <span>View GitHub</span>
+                <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+              </a>
+              <a href="mailto:dhananjaysode2511@gmail.com?subject=Oak%20Wood%20Computers" class="flex items-center gap-2 border border-white/20 px-6 py-3 rounded-full font-bold hover:border-primary transition-all">
+                <span class="material-symbols-outlined text-sm" data-icon="terminal">terminal</span>
+                <span>Console App</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Journey Section -->
+    <section id="journey">
+      <div class="text-center mb-24">
+        <span class="font-label-mono text-label-mono text-secondary uppercase tracking-widest block mb-4">Milestones</span>
+        <h2 class="font-headline-md text-headline-md text-on-surface">Learning Journey</h2>
+      </div>
+
+      <div class="relative max-w-4xl mx-auto py-12">
+        <!-- Center Line -->
+        <div class="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-px timeline-line"></div>
+
+        <!-- Milestone 1 -->
+        <div class="relative flex md:items-center md:justify-between mb-24 md:mb-32 w-full pl-12 md:pl-0">
+          <div class="md:w-[45%] md:text-right md:pr-12 group">
+            <span class="font-label-mono text-label-mono text-primary block mb-2 opacity-60">2020 Lockdown</span>
+            <h4 class="font-headline-md text-xl text-on-surface mb-2">Started Learning Python</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Started programming during lockdown, learned Python, created Discord bots, and built multiple small projects to practice logic and automation.</p>
+          </div>
+          <div class="absolute left-4 md:left-1/2 -translate-x-1/2 flex items-center justify-center">
+            <div class="w-4 h-4 rounded-full bg-primary neon-glow relative z-10"></div>
+            <div class="absolute w-8 h-8 rounded-full border border-primary/30 animate-ping"></div>
+          </div>
+          <div class="hidden md:block w-[45%]"></div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="relative flex md:items-center md:justify-between mb-24 md:mb-32 w-full pl-12 md:pl-0">
+          <div class="hidden md:block w-[45%]"></div>
+          <div class="absolute left-4 md:left-1/2 -translate-x-1/2 flex items-center justify-center">
+            <div class="w-4 h-4 rounded-full bg-secondary neon-glow relative z-10" style="box-shadow: 0 0 15px rgba(233, 179, 255, 0.5)"></div>
+          </div>
+          <div class="md:w-[45%] md:pl-12 group">
+            <span class="font-label-mono text-label-mono text-secondary block mb-2 opacity-60">2023</span>
+            <h4 class="font-headline-md text-xl text-on-surface mb-2">HTML & CSS</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Started learning web development with HTML and CSS, building the base for responsive layouts, styling, and clean user interfaces.</p>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="relative flex md:items-center md:justify-between w-full pl-12 md:pl-0">
+          <div class="md:w-[45%] md:text-right md:pr-12 group">
+            <span class="font-label-mono text-label-mono text-tertiary block mb-2 opacity-60">2025</span>
+            <h4 class="font-headline-md text-xl text-on-surface mb-2">C/C++ & CollegeSujhav</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Learned C/C++ for programming fundamentals and created CollegeSujhav, a college guidance website built with HTML, CSS, and JavaScript.</p>
+          </div>
+          <div class="absolute left-4 md:left-1/2 -translate-x-1/2 flex items-center justify-center">
+            <div class="w-4 h-4 rounded-full bg-tertiary neon-glow relative z-10" style="box-shadow: 0 0 15px rgb(var(--tertiary) / 0.5)"></div>
+          </div>
+          <div class="hidden md:block w-[45%]"></div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="relative flex md:items-center md:justify-between w-full pl-12 md:pl-0 mt-24 md:mt-32">
+          <div class="hidden md:block w-[45%]"></div>
+          <div class="absolute left-4 md:left-1/2 -translate-x-1/2 flex items-center justify-center">
+            <div class="w-4 h-4 rounded-full bg-primary neon-glow relative z-10"></div>
+          </div>
+          <div class="md:w-[45%] md:pl-12 group">
+            <span class="font-label-mono text-label-mono text-primary block mb-2 opacity-60">July 2026 Target</span>
+            <h4 class="font-headline-md text-xl text-on-surface mb-2">Complete MERN Stack</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Targeting completion of the MERN stack by July 2026, covering MongoDB, Express, React, Node.js, and full-stack project building.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/30">
+    <div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-7xl mx-auto gap-base">
+      <div class="font-headline-md text-headline-md text-on-surface font-bold tracking-tighter">
+        DHANANJAY.DEV
+      </div>
+      <div class="font-label-mono text-label-mono text-outline text-center md:text-left opacity-60">
+        © 2024 DHANANJAY. ARCHITECTING THE FUTURE.
+      </div>
+      <div class="flex items-center gap-6">
+        <a class="font-label-mono text-label-mono text-outline hover:text-secondary transition-colors duration-200 uppercase text-xs" href="projects.html">Projects</a>
+        <a class="font-label-mono text-label-mono text-outline hover:text-secondary transition-colors duration-200 uppercase text-xs" href="about.html">About</a>
+        <a class="font-label-mono text-label-mono text-outline hover:text-secondary transition-colors duration-200 uppercase text-xs" href="contact.html">Contact</a>
+        <a class="font-label-mono text-label-mono text-outline hover:text-secondary transition-colors duration-200 uppercase text-xs" href="mailto:dhananjaysode2511@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme-toggle.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/effects.js" defer></script>
+</body>
+</html>
