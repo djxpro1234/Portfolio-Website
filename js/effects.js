@@ -26,8 +26,9 @@
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
   let w, h, particles;
-  const COUNT = 60;
-  const MAX_DIST = 120;
+  const isMobile = window.innerWidth < 768;
+  const COUNT = isMobile ? 25 : 60;
+  const MAX_DIST = isMobile ? 90 : 120;
 
   function resize() {
     w = canvas.width = window.innerWidth;

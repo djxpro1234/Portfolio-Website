@@ -126,3 +126,47 @@ body {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ===========================
+   Mobile Responsive Fixes
+   =========================== */
+
+/* Prevent horizontal scroll on every page */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  /* Tighter vertical rhythm — 120px section gaps are too large on phones */
+  .pb-section-gap { padding-bottom: 56px !important; }
+  .py-section-gap { padding-top: 56px !important; padding-bottom: 56px !important; }
+  .mb-section-gap { margin-bottom: 56px !important; }
+
+  /* Disable tilt transforms on touch (they get stuck without mouseleave) */
+  [data-tilt] { transform: none !important; }
+
+  /* Lighter particle field for performance & readability */
+  #particle-canvas { opacity: 0.3; }
+
+  /* Custom cursor never applies on touch — restore native cursor */
+  body, a, button, [data-tilt] { cursor: auto !important; }
+
+  /* Keep hero floating badges inside the screen */
+  [data-avatar] .absolute.-top-4 { top: 0; right: 0; padding: 0.5rem; }
+}
+
+/* Smaller contact form padding on phones */
+@media (max-width: 640px) {
+  .glass-surface.p-10 { padding: 1.5rem !important; }
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .fade-in { opacity: 1 !important; transform: none !important; }
+}
